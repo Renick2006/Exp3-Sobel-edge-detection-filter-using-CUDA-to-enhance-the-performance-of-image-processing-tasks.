@@ -219,19 +219,38 @@ plt.show()
 
 
 ## RESULT:
-Thus the program has been executed by using CUDA to ________________.
 
-Questions:
 
-What challenges did you face while implementing the Sobel filter for color images?
-How did changing the block size influence the performance of your CUDA implementation?
-What were the differences in output between the CUDA and CPU implementations? Discuss any discrepancies.
-Suggest potential optimizations for improving the performance of the Sobel filter.
 
-Deliverables:
+Thus, the Sobel edge detection filter was successfully implemented using CUDA to detect and highlight edges in a tiger image. The color image was processed to generate a grayscale edge-detected output using horizontal and vertical gradient kernels. CUDA parallel processing enabled efficient image processing by executing multiple pixel operations simultaneously.
 
-Modified CUDA code with comments explaining your changes.
-A report summarizing your findings, including graphs of execution times and a comparison of outputs.
-Answers to the questions posed in the experiment.
-Tools Required:
+
+## Questions:
+
+1. What challenges did you face while implementing the Sobel filter for color images?
+   
+Answer: Converting the color image into grayscale, handling pixel boundaries, and managing GPU memory efficiently.
+
+2. How did changing the block size influence the performance of your CUDA implementation?
+   
+Answer: Changing the block size affected thread utilization and execution time, with a 16×16 block size used in this implementation.
+
+3. What were the differences in output between the CUDA and CPU implementations? Discuss any discrepancies.
+   
+Answer: Both produced similar grayscale edge-detected images, but CUDA used parallel processing for faster computation.
+
+4. Suggest potential optimizations for improving the performance of the Sobel filter.
+   
+Answer: Using shared memory, optimizing block sizes, reducing memory transfers, and improving thread utilization can enhance performance.
+
+
+## Tools Required:
+
+1. Computer with NVIDIA GPU.
+2. Google Colab with CUDA NVCC compiler.
+3. CUDA Toolkit.
+4. OpenCV library.
+5. Python programming environment.
+6. Sample tiger image for edge detection.
+7. NVIDIA GPU drivers.
 
